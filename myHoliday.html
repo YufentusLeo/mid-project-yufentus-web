@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Holiday - John Doe</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "nav main aside"
+                "footer footer footer";
+            grid-template-columns: 200px 1fr 200px;
+            min-height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            background: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            grid-area: nav;
+            background: #f4f4f4;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-bottom: 1rem;
+        }
+
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #666;
+        }
+
+        main {
+            grid-area: main;
+            padding: 2rem;
+        }
+
+        aside {
+            grid-area: aside;
+            background: #f4f4f4;
+            padding: 1rem;
+        }
+
+        footer {
+            grid-area: footer;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .profile-img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 50%;
+            margin: 1rem 0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .description {
+            margin: 2rem 0;
+        }
+
+        .description p {
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-areas:
+                    "header"
+                    "nav"
+                    "main"
+                    "aside"
+                    "footer";
+                grid-template-columns: 1fr;
+            }
+
+            .gallery img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Holiday Adventures</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="myHoliday.html">My Holiday</a></li>
+                <li><a href="registration.html">Registration</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="description">
+                <h2>Panmuti Beach, NTT</h2>
+                <p>
+                    <strong>Panmuti</strong> is a body of water that holds awe-inspiring natural beauty and mysterious stories. 
+                    Nestled between the small islands scattered around the region, the Panmuti Sea is known for its clear, 
+                    turquoise waters and rich marine life. Beautiful coral reefs dot the seabed, home to various species of 
+                    tropical fish and other sea creatures. This underwater beauty makes the Panmuti Sea a haven for divers 
+                    and travellers who seek respite from the hustle and bustle of everyday life.
+                </p>
+                <p>
+                    However, the Panmuti Sea is not just about its natural beauty. Local people believe that this sea also has 
+                    <em>Strong Mystical Aura</em>. They often tell stories about the sea spirits that guard these waters, 
+                    as well as the mythological creatures that are said to inhabit the depths of the Panmuti Sea. Fishermen 
+                    who frequent these waters often perform traditional rituals before going out to sea to honour and seek 
+                    protection from the sea spirits. These stories have been passed down for generations, adding to the 
+                    mysterious appeal of the Panmuti Sea.
+                </p>
+                <p>
+                    For visitors, the Panmuti Sea offers an unforgettable experience. Wandering around <strong>small islands</strong>, 
+                    exploring the pristine beaches, or simply enjoying the sunset on a traditional boat are some of the 
+                    activities that can be done here. The Panmuti Sea is a place where nature, culture and myth come together 
+                    in beautiful harmony, creating an unrivalled charm and leaving a lasting impression on anyone who comes to visit.
+                </p>
+            </div>
+
+            <h2>Travel Gallery</h2>
+            <div class="gallery">
+                <img src="FotoJet-92-1631631846.jpg" alt="Panmuti beach scenic view">
+                <img src="1.jpg" alt="Panmuti beach sunrise">
+                <img src="2.jpg" alt="Panmuti beach coral reef">
+                <img src="3.jpg" alt="Panmuti beach traditional boats">
+                <img src="4.jpg" alt="Panmuti beach marine life">
+                <img src="5.jpg" alt="Panmuti beach sunset">
+                <img src="6.jpg" alt="Panmuti beach island view">
+            </div>
+        </main>
+
+        <aside>
+            <h3>Travel Stats</h3>
+            <ul>
+                <li>Countries: 20</li>
+                <li>Cities: 50</li>
+                <li>Photos: 1000+</li>
+            </ul>
+        </aside>
+
+        <footer>
+            <p>&copy; 2024 Yufentus. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
